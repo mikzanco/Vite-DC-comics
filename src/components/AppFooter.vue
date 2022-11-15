@@ -1,16 +1,29 @@
 <script>
 export default {
   name: 'AppFooter',
+  // data(){
+  //   return{
+  //     menuImg:[
+  //       img = digital-comics,
+  //       img
 
+
+  //     ]
+  //   }
+  // }
 }
 </script>
 
 <template>
   <footer>
-    
+    <img src="../assets/img/dc-logo-bg.png" alt="" class="logo">
     <div class="sectionone">
         <div class="container ">
-        
+          <img src="../assets/img/buy-comics-digital-comics.png" alt="">
+          <img src="../assets/img/buy-comics-merchandise.png" alt="">
+          <img src="../assets/img/buy-comics-shop-locator.png" alt="">
+          <img src="../assets/img/buy-comics-subscriptions.png" alt="">
+          <img src="../assets/img/buy-dc-power-visa.svg" alt="">
       </div>
     </div>
       
@@ -75,10 +88,24 @@ export default {
     width: 100%;
     background-image: url("../assets/img/footer-bg.jpg");
     color: white;
+    overflow: hidden;
+    position: relative;
+    .logo{
+      position: absolute;
+      right: 10%
+    }
     .sectionone{
       height: 130px;
       width: 100%;
       background-color: #6288f9;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img{
+        height: 160px;
+        padding: 50px;
+      }
+      
     }
     .sectiontwo{
       height: 370px;
@@ -86,9 +113,17 @@ export default {
     }
     .sectionthree{
       height: calc(620px - 130px - 370px);
+      width: 100%;
       background-color: #050505;
-      justify-content: space-between;
+      display: flex;
+      align-items: center;
+      
+      .container{
+         justify-content: space-between;
+
+      }
     }
+    
     
 
   }
