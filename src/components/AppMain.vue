@@ -20,7 +20,7 @@ export default {
     width: 100%;
     background-color: black;
     display: flex;
-    justify-content: center;
+    
     color: white;
   }
 </style>
