@@ -19,11 +19,18 @@ export default {
     <img src="../assets/img/dc-logo-bg.png" alt="" class="logo">
     <div class="sectionone">
         <div class="container ">
+
           <img src="../assets/img/buy-comics-digital-comics.png" alt="">
+          <a href="#">digital comics</a>
           <img src="../assets/img/buy-comics-merchandise.png" alt="">
+          <a href="#">dc merchandise</a>
           <img src="../assets/img/buy-comics-shop-locator.png" alt="">
+          <a href="#">subscription</a>
           <img src="../assets/img/buy-comics-subscriptions.png" alt="">
+          <a href="#">Comic shop locator</a>
           <img src="../assets/img/buy-dc-power-visa.svg" alt="">
+          <a href="#">DC power visa</a>
+
       </div>
     </div>
       
@@ -31,36 +38,43 @@ export default {
       
       <div class="sectiontwo">
         <div class="container">
-          <h4>Dc comics</h4>
-          <span>Character</span>
-          <span>Comics</span>
-          <span>Movies</span>
-          <span>TV</span>
-          <span>Games</span>
-          <span>Videos</span>
-          <span>News</span>
-          <h4>Shop</h4>
-          <span>Shop DC</span>
-          <span>Shop DC Collectibles</span>
-          <h4>Dc</h4>
-          <span>Terms Of Use</span>
-          <span>Pricacy pollicy(New)</span>
-          <span>Ad Choise</span>
-          <span>Advertising</span>
-          <span>Jobs</span>
-          <span>Subscriptions</span>
-          <span>Talent Workshop</span>
-          <span>CPSC Certificates</span>
-          <span>Ratings</span>
-          <span>Shop Help</span>
-          <span>Contact Us</span>
-          <h4>Sites</h4>
-          <span>DC</span>
-          <span>Mad Magazine</span>
-          <span>DC Kids</span>
-          <span>DC Universe</span>
-          <span>DC Power Visa</span>
-          </div>
+          <ul> <h4>Dc comics</h4>
+            <li>Character</li>
+            <li>Character</li>
+            <li>Movies</li>
+            <li>TV</li>
+            <li>Games</li>
+            <li>Videos</li>
+            <li>News</li>
+          </ul>
+          
+          <ul><h4>Shop</h4>
+            <li>Shop DC</li>
+            <li>Shop DC Collectibles</li>
+          </ul>
+          
+          <ul><h4>Dc</h4>
+            <li>Terms Of Use</li>
+            <li>Pricacy pollicy(New)</li>
+            <li>Ad Choise</li>
+            <li>Advertising</li>
+            <li>Jobs</li>
+            <li>Subscriptions</li>
+            <li>Talent Workshop</li>
+            <li>CPSC Certificates</li>
+            <li>Ratings</li>
+            <li>Shop Help</li>
+            <li>Contact Us</li>
+          </ul>
+          
+          <ul> <h4>Sites</h4>
+            <li>DC</li>
+            <li>Mad Magazine</li>
+            <li>DC Kids</li>
+            <li>DC Universe</li>
+            <li>DC Power Visa</li>           
+          </ul>
+        </div>
         
       </div>
       <div class="sectionthree">
@@ -68,9 +82,13 @@ export default {
           <div class="button">
           <button class="btn">Sign-up now!</button>
         </div>
-        <div class="social">
-          <span>Follow Us</span>
-          
+        <div class="social d-flex">
+          <h4>Follow Us</h4>
+          <img src="../assets/img/footer-facebook.png" alt="">
+          <img src="../assets/img/footer-periscope.png" alt="">
+          <img src="../assets/img/footer-pinterest.png" alt="">
+          <img src="../assets/img/footer-twitter.png" alt="">
+          <img src="../assets/img/footer-youtube.png" alt="">
         </div>
         </div>
         
@@ -101,15 +119,30 @@ export default {
       display: flex;
       align-items: center;
       justify-content: center;
+      a{
+        text-decoration: none;
+        color: white;
+      }
       img{
-        height: 160px;
-        padding: 50px;
+        height: 110px;
+        padding: 30px;
       }
       
     }
     .sectiontwo{
       height: 370px;
       width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      ul{
+        padding: 20px;
+        list-style: none;
+        li{
+          padding: 5px;
+          color: #9a9a9a;
+        }
+      }
     }
     .sectionthree{
       height: calc(620px - 130px - 370px);
@@ -117,10 +150,19 @@ export default {
       background-color: #050505;
       display: flex;
       align-items: center;
+      justify-content: center;
       
       .container{
+        
          justify-content: space-between;
-
+        h4{
+          color: #0480f6;
+          font-size: 1.5rem;
+          padding: 12px;
+        }
+      }
+      .social img{
+        padding: 10px
       }
     }
     
