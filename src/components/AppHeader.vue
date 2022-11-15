@@ -39,6 +39,8 @@ export default {
     justify-content: center;
     .container{
       justify-content: space-around;
+      
+      
       img{
       height: 70px;         
       }
