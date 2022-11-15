@@ -47,6 +47,11 @@ export default {
       ul{
         display: flex;
         list-style: none;
+        
+        li{
+          border-bottom: 2px solid black;
+          box-shadow: inset;
+        }
         a{
           text-decoration: none;
           padding: 10px;
