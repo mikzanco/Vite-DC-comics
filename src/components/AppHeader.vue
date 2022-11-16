@@ -48,7 +48,7 @@ export default {
     width: 100%;
     
     .container{
-      justify-content: space-around;
+      justify-content: space-between;
       
       
       img{
@@ -59,6 +59,7 @@ export default {
         list-style: none;
         a{
           text-decoration: none;
+          font-size: 0.8rem;
           padding: 10px;
           &:hover,
           &:active{
