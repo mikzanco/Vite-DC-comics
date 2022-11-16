@@ -80,16 +80,16 @@ export default {
       <div class="sectionthree">
         <div class="container">
           <div class="button">
-          <button class="btn">Sign-up now!</button>
-        </div>
-        <div class="social d-flex">
-          <h4>Follow Us</h4>
-          <img src="../assets/img/footer-facebook.png" alt="">
-          <img src="../assets/img/footer-periscope.png" alt="">
-          <img src="../assets/img/footer-pinterest.png" alt="">
-          <img src="../assets/img/footer-twitter.png" alt="">
-          <img src="../assets/img/footer-youtube.png" alt="">
-        </div>
+            <button class="btn">Sign-up now!</button>
+          </div>
+          <div class="social d-flex">
+            <h4>Follow Us</h4>
+            <img src="../assets/img/footer-facebook.png" alt="">
+            <img src="../assets/img/footer-periscope.png" alt="">
+            <img src="../assets/img/footer-pinterest.png" alt="">
+            <img src="../assets/img/footer-twitter.png" alt="">
+            <img src="../assets/img/footer-youtube.png" alt="">
+          </div>
         </div>
         
       </div>
@@ -133,7 +133,7 @@ export default {
       height: 370px;
       width: 100%;
       display: flex;
-      justify-content: center;
+      justify-content: flex-start;
       align-items: center;
       ul{
         padding: 20px;
@@ -158,12 +158,29 @@ export default {
         h4{
           color: #0480f6;
           font-size: 1.5rem;
-          padding: 12px;
+          padding: 15px;
         }
+          .social img{
+          padding: 10px
+        }
+        .btn{
+          padding: 16px 32px;
+          text-align: center;
+          font-size: 16px;
+          text-transform: uppercase;
+          margin: 4px 2px;
+          cursor: pointer;
+          background-color: #050505;
+          color: #0480f6;
+          border: 2px solid #0480f6;
+          &:hover{
+            background-color: #0480f6;
+            color: #050505;
+          }
+        }
+
       }
-      .social img{
-        padding: 10px
-      }
+      
     }
     
     
