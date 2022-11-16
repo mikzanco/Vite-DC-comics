@@ -3,12 +3,7 @@ export default {
   name: 'AppFooter',
   // data(){
   //   return{
-  //     menuImg:[
-  //       img = digital-comics,
-  //       img
-
-
-  //     ]
+  //     immagine
   //   }
   // }
 }
@@ -100,6 +95,9 @@ export default {
 
 // background-image: url("../assets/img/dc-logo-bg.png")
 <style lang="scss" scoped>
+
+  @use '../style/partials/variables' as *;
+  @use '../style/partials/mixin' as *;
   
   footer{
     height: 620px;
@@ -115,7 +113,7 @@ export default {
     .sectionone{
       height: 130px;
       width: 100%;
-      background-color: #6288f9;
+      background-color: $primary-color;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -156,7 +154,7 @@ export default {
         
          justify-content: space-between;
         h4{
-          color: #0480f6;
+          color: $primary-color;
           font-size: 1.5rem;
           padding: 15px;
         }
@@ -171,10 +169,10 @@ export default {
           margin: 4px 2px;
           cursor: pointer;
           background-color: #050505;
-          color: #0480f6;
-          border: 2px solid #0480f6;
+          color: $primary-color;
+          border: 2px solid $primary-color;
           &:hover{
-            background-color: #0480f6;
+            background-color: $primary-color;
             color: #050505;
           }
         }
