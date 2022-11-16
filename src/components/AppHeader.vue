@@ -21,7 +21,7 @@ export default {
         <li><a href="#">Videos</a></li>
         <li><a href="#">Fans</a></li>
         <li><a href="#">News</a></li>
-        <li><a href="#">Shop</a></li>
+        <li><a class="active" href="#">Shop</a></li>
       </ul>
     </nav>
     </div>
@@ -47,14 +47,15 @@ export default {
       ul{
         display: flex;
         list-style: none;
-        
-        li{
-          border-bottom: 2px solid black;
-          box-shadow: inset;
-        }
         a{
           text-decoration: none;
           padding: 10px;
+          &:hover,
+          &:active{
+            padding-bottom: 35px;
+            border-bottom: 5px solid #0282f9;
+            color: #0282f9;
+          }
         }
       }
     }
