@@ -131,8 +131,10 @@ export default {
       height: 370px;
       width: 100%;
       display: flex;
-      justify-content: flex-start;
-      align-items: center;
+      .container{
+        margin: 0 auto;
+        justify-content: flex-start;
+      }
       ul{
         padding: 20px;
         list-style: none;

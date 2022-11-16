@@ -1,6 +1,62 @@
 <script>
 export default {
   name: 'AppHeader',
+  data(){
+    return{
+      menu: [
+        {
+          text: 'Character',
+          href: '#',
+          current: false
+        },
+        {
+          text: 'Comics',
+          href: '#',
+          current: false
+        },
+        {
+          text: 'TV',
+          href: '#',
+          current: false
+        },
+        {
+          text: 'Movies',
+          href: '#',
+          current: false
+        },
+        {
+          text: 'Games',
+          href: '#',
+          current: false
+        },
+        {
+          text: 'Collectibles',
+          href: '#',
+          current: false
+        },
+        {
+          text: 'Videos',
+          href: '#',
+          current: false
+        },
+        {
+          text: 'Fans',
+          href: '#',
+          current: false
+        },
+        {
+          text: 'News',
+          href: '#',
+          current: false
+        },
+        {
+          text: 'Shop',
+          href: '#',
+          current: false
+        },
+      ]
+    }
+  }
 }
 </script>
 
@@ -16,16 +72,12 @@ export default {
       <nav>
 
         <ul>
-          <li><a href="#">Character</a></li>
-          <li><a href="#">Comics</a></li>
-          <li><a href="#">Movies</a></li>
-          <li><a href="#">Tv</a></li>
-          <li><a href="#">Games</a></li>
-          <li><a href="#">Collectibles</a></li>
-          <li><a href="#">Videos</a></li>
-          <li><a href="#">Fans</a></li>
-          <li><a href="#">News</a></li>
-          <li><a class="active" href="#">Shop</a></li>
+          <li
+            v-for="(link, index) in menu"
+            :key="index"
+          ><a :class="{'active': link.current}" :href="link.href">{{link.text}}</a>
+          </li>
+          
         </ul>
 
       </nav>
